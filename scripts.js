@@ -14,7 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
   
   fetch('https://weatherapi-com.p.rapidapi.com/current.json?q=Pullman%2C%20WA', options)
     .then(response => response.json())
-    .then(response => console.log(response))
+    .then(function(response) {
+      document.querySelector("#tempF span").innerHTML = response.current.temp_f;
+      document.querySelector("#tempC span").innerHTML = response.current.temp_c;
+      return response;
+    
+  })
     .catch(err => console.error(err));
   
 });

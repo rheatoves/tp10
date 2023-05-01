@@ -1,1 +1,27 @@
 /* CSS for TP10 */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#temps {
+  background: pink;
+  width: 100%;
+  heigth: 50vw;
+  position: relative;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#tempF {
+  font-size: 100px;
+  float: left;
+}
+
+#tempC {
+  font-size: 100px;
+  float: right;
+}
