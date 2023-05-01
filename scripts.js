@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.json())
     .then(function(response) {
       document.querySelector("#tempF span").innerHTML = response.current.temp_f;
-      document.querySelector("#tempC span").innerHTML = response.current.temp_c;
+      document.querySelector("#location span").innerHTML = response.location.name;
+      document.querySelector("#windD span").innerHTML = response.current.wind_dir;
+      document.querySelector("#windS span").innerHTML = response.current.wind_mph;
+      document.querySelector("#cloud span").innerHTML = response.current.cloud;
+      document.querySelector("#humidity span").innerHTML = response.current.humidity;
       return response;
     
   })

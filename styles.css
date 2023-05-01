@@ -8,20 +8,45 @@
   box-sizing: border-box;
 }
 
-#temps {
-  background: pink;
+#temp {
+  background: #2f4f4f;
   width: 100%;
-  heigth: 50vw;
+  height: 60vw;
   position: relative;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-#tempF {
-  font-size: 100px;
-  float: left;
+#location {
+  color: #E6E6FA;
+  font-size: 50px;
 }
 
-#tempC {
-  font-size: 100px;
-  float: right;
+#tempF {
+  color: #E6E6FA;
+  font-size: 50px;
+  
+}
+
+#windD {
+  color: #E6E6FA;
+  font-size: 50px;
+}
+
+#windS {
+  color: #E6E6FA;
+  font-size: 50px;
+}
+
+#cloud {
+  color: #E6E6FA;
+  font-size: 50px;
+}
+
+#humidity {
+  color: #E6E6FA;
+  font-size: 50px;
+}
+
+h2 {
+  color: white;
 }
